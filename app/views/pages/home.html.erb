@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+<h2>you are logged in homie</h2>
+<% else %>
+
 <div class="hero-unit">
 <h1>Keeping it Real With Rails!</h1>
 <p>
@@ -9,6 +13,7 @@ application.
 	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 </p>
 </div>
+<% end %>
 
 
 
